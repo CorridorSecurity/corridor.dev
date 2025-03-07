@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corridor: AI-powered security refactors at scale.</title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <style>
+      /* Add theme variables */
+      :root[data-theme="dark"] {
+        --bg-gradient: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+        --text-color: #ffffff;
+        --text-secondary: #cccccc;
+        --feature-bg: rgba(255, 255, 255, 0.05);
+        --coming-soon-bg: rgba(255, 255, 255, 0.1);
+      }
+
+      :root[data-theme="light"] {
+        --bg-gradient: linear-gradient(135deg, #f5f5f5, #ffffff);
+        --text-color: #1a1a1a;
+        --text-secondary: #444444; /* Even darker grey */
+        --feature-bg: rgba(0, 0, 0, 0.05);
+        --coming-soon-bg: rgba(0, 0, 0, 0.1);
+      }
+
+      /* Update existing styles to use variables */
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--bg-gradient);
+        color: var(--text-color);
+        text-align: center;
+      }
+      .container {
+        max-width: 800px;
+        padding: 2rem;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+      .tagline {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: var(--text-secondary);
+      }
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+      .feature {
+        background: var(--feature-bg);
+        padding: 1rem;
+        border-radius: 8px;
+        width: 200px;
+      }
+      .coming-soon {
+        font-size: 1.2rem;
+        margin: 2rem 0;
+        padding: 0.5rem 1.5rem;
+        background: var(--coming-soon-bg);
+        border-radius: 25px;
+      }
+      .contact {
+        margin-top: 2rem;
+        color: #4e80ee;
+      }
+      a {
+        color: var(--text-secondary);
+        /* text-decoration: none; */
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .waitlist-button {
+        background: linear-gradient(135deg, #4e80ee, #3366cc);
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        margin-bottom: 2rem;
+        text-decoration: none;
+        color: white;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 8px rgba(78, 128, 238, 0.3);
+      }
+      .waitlist-button:hover {
+        text-decoration: none;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(78, 128, 238, 0.4);
+      }
+
+      /* Add theme toggle button styles */
+      .theme-toggle {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        border: 1.5px solid var(--text-secondary);
+        background: transparent;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1.2rem;
+      }
+
+      .theme-toggle:hover {
+        background: var(--feature-bg);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-toggle" onclick="toggleTheme()">☾</button>
+    <div class="container">
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+        "
+      >
+        <img src="logo-square.png" alt="Corridor Logo" style="width: 50px" />
+        <h1 style="margin: 0">Corridor</h1>
+      </div>
+      <br />
+      <div class="tagline">The AI-powered Secure by Design platform.</div>
+      <div
+        style="
+          color: var(--text-secondary);
+          margin-bottom: 2rem;
+          font-size: 1.2rem;
+        "
+      >
+        <a href="https://ashwin.run">Ashwin Ramaswami</a> and
+        <a href="https://cablej.io">Jack Cable</a>
+      </div>
+
+      <p
+        style="
+          color: var(--text-secondary);
+          margin-bottom: 2rem;
+          font-size: 1.2rem;
+        "
+      >
+        Corridor helps companies build Secure by Design software by generating
+        validated fixes for vulnerabilities – securing codebases and saving
+        developers time.
+      </p>
+
+      <p
+        style="
+          color: var(--text-secondary);
+          margin-bottom: 2rem;
+          font-size: 1.2rem;
+        "
+      >
+        We're currently seeking early design partners who are willing to try out
+        our product. We are iterating quickly at this stage and are eager to
+        partner and design our product with you.
+      </p>
+
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfFeQYn1dM9J83FuDNUFhKjCprgQsr2zOqw1jAS2NpXd5S5KA/viewform?usp=header"
+        class="waitlist-button"
+        >Join the Waitlist</a
+      ><br /><br />
+
+      <p style="color: var(--text-secondary); margin-bottom: 2rem">
+        We're currently hiring for founding engineers. Please
+        <a href="mailto:contact@corridor.dev">reach out</a> if you're interested
+        in joining our team.
+      </p>
+
+      <div class="contact" style="color: var(--text-secondary)">
+        Contact us:
+        <a
+          href="mailto:contact@corridor.dev"
+          style="color: var(--text-secondary)"
+          >contact@corridor.dev</a
+        >
+      </div>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        const html = document.documentElement;
+        const button = document.querySelector(".theme-toggle");
+
+        if (html.getAttribute("data-theme") === "dark") {
+          html.setAttribute("data-theme", "light");
+          button.textContent = "☾";
+        } else {
+          html.setAttribute("data-theme", "dark");
+          button.textContent = "☼";
+        }
+      }
+    </script>
+  </body>
+</html>
