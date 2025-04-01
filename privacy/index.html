@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Corridor</title>
+    <link rel="icon" type="image/png" href="../favicon.ico" />
+    <style>
+      /* Add theme variables */
+      :root[data-theme="dark"] {
+        --bg-gradient: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+        --text-color: #ffffff;
+        --text-secondary: #cccccc;
+        --feature-bg: rgba(255, 255, 255, 0.05);
+        --coming-soon-bg: rgba(255, 255, 255, 0.1);
+      }
+
+      :root[data-theme="light"] {
+        --bg-gradient: linear-gradient(135deg, #f5f5f5, #ffffff);
+        --text-color: #1a1a1a;
+        --text-secondary: #444444; /* Even darker grey */
+        --feature-bg: rgba(0, 0, 0, 0.05);
+        --coming-soon-bg: rgba(0, 0, 0, 0.1);
+      }
+
+      /* Update existing styles to use variables */
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-gradient);
+        color: var(--text-color);
+      }
+      .container {
+        max-width: 800px;
+        padding: 2rem;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+      h3 {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: var(--text-color);
+      }
+      p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+      }
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      a {
+        color: var(--text-secondary);
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .theme-toggle {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        border: 1.5px solid var(--text-secondary);
+        background: transparent;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1.2rem;
+      }
+      .theme-toggle:hover {
+        background: var(--feature-bg);
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      .footer {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        text-align: center;
+        border-top: 1px solid var(--text-secondary);
+        color: var(--text-secondary);
+      }
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-toggle" onclick="toggleTheme()">☾</button>
+
+    <div class="container">
+      <div class="header">
+        <div class="logo-container">
+          <a href="../"
+            ><img
+              src="../logo-square.png"
+              alt="Corridor Logo"
+              style="width: 50px"
+          /></a>
+          <h1 style="margin: 0">Corridor</h1>
+        </div>
+      </div>
+
+      <h1>Privacy Policy</h1>
+      <p><strong>Effective Date: March 31, 2025</strong></p>
+
+      <h2 id="introduction">Introduction</h2>
+      <p>Corridor Security, Inc. is an AI-powered Secure by Design platform.</p>
+      <p>
+        We understand that you are aware of and care about your own personal
+        privacy interests, and we take that seriously. This Privacy Notice
+        describes the Corridor's policies and practices regarding its collection
+        and use of your personal data, and sets forth your privacy rights. We
+        recognize that information privacy is an ongoing responsibility, and so
+        we will from time to time update this Privacy Notice as we undertake new
+        personal data practices or adopt new privacy policies.
+      </p>
+
+      <h2 id="data-protection-officer">Data Protection Officer</h2>
+      <p>
+        Corridor is headquartered in Delaware, in the United States. Corridor
+        has appointed an internal data protection officer for you to contact if
+        you have any questions or concerns about Corridor's personal data
+        policies or practices. If you would like to exercise your privacy
+        rights, please direct your query to Corridor's data protection officer.
+        Corridor's data protection officer's name and contact information are as
+        follows:
+      </p>
+      <p>
+        Jack Cable<br />
+        jack@corridor.dev
+      </p>
+
+      <h2 id="how-we-collect">
+        How we collect and use (process) your personal information
+      </h2>
+      <p>
+        Corridor collects personal information about its website visitors and
+        customers. With a few exceptions, this information is generally limited
+        to:
+      </p>
+      <ul>
+        <li>name</li>
+        <li>email address</li>
+        <li>Content (such as code repositories) uploaded by users</li>
+      </ul>
+      <p>
+        We use this information to provide prospects and customers with
+        services. We do not sell personal information to anyone and only share
+        it with third parties who are facilitating the delivery of our services.
+      </p>
+
+      <h2 id="use-of-website">Use of the Corridor Website</h2>
+      <p>
+        As is true of most other websites, Corridor's website collects certain
+        information automatically and stores it in log files. The information
+        may include internet protocol (IP) addresses, the region or general
+        location where your computer or device is accessing the internet,
+        browser type, operating system and other usage information about the use
+        of Corridor's website, including a history of the pages you view. We use
+        this information to help us design our site to better suit our users'
+        needs. We may also use your IP address to help diagnose problems with
+        our server and to administer our website, analyze trends, track visitor
+        movements, and gather broad demographic information that assists us in
+        identifying visitor preferences.
+      </p>
+      <p>
+        Corridor has a legitimate interest in understanding how members,
+        customers and potential customers use its website. This assists Corridor
+        with providing more relevant products and services, with communicating
+        value to our sponsors and corporate members, and with providing
+        appropriate staffing to meet member and customer needs.
+      </p>
+
+      <h2 id="sharing-information">
+        When and how we share information with third parties
+      </h2>
+      <p>
+        The personal information Corridor collects from you is stored in one or
+        more databases hosted by third parties located in the United States.
+        These third parties do not use or have access to your personal
+        information for any purpose other than cloud storage and retrieval. On
+        occasion, Corridor engages third parties to send information to you,
+        including information about our products, services, and events.
+      </p>
+      <p>
+        A list of our third party sub processors can be found here: Amazon Web
+        Services, Microsoft, Anthropic.
+      </p>
+      <p>
+        We do not otherwise reveal your personal data to non-Corridor persons or
+        businesses for their independent use unless: (1) you request or
+        authorize it; (2) it's in connection with Corridor-hosted and Corridor
+        co-sponsored conferences as described above; (3) the information is
+        provided to comply with the law (for example, compelled by law
+        enforcement to comply with a search warrant, subpoena, or court order),
+        enforce an agreement we have with you, or to protect our rights,
+        property or safety, or the rights, property or safety of our employees
+        or others; (4) the information is provided to our agents, vendors or
+        service providers who perform functions on our behalf; (5) to address
+        emergencies or acts of God; or (6) to address disputes, claims, or to
+        persons demonstrating legal authority to act on your behalf. We may also
+        gather aggregated data about our services and website visitors and
+        disclose the results of such aggregated (but not personally
+        identifiable) information to our partners, service providers,
+        advertisers, and/or other third parties for marketing or promotional
+        purposes.
+      </p>
+      <p>
+        The Corridor website connects with third party services such as GitHub.
+        If you choose to share information from the Corridor website through
+        these services, you should review the privacy policy of that service. If
+        you are a member of a third party service, the aforementioned
+        connections may allow that service to connect your visit to our site to
+        your personal data.
+      </p>
+
+      <h2 id="transferring-data">Transferring personal data to the U.S.</h2>
+      <p>
+        Corridor has its headquarters in the United States. Information we
+        collect about you will be processed in the United States. By using
+        Corridor's services, you acknowledge that your personal information will
+        be processed in the United States. The United States has not sought nor
+        received a finding of "adequacy" from the European Union under Article
+        45 of the GDPR. Pursuant to Article 46 of the GDPR, Corridor is
+        providing for appropriate safeguards by entering binding, standard data
+        protection clauses, enforceable by data subjects in the EEA and the UK.
+        These clauses have been enhanced based on the guidance of the European
+        Data Protection Board and will be updated when the new draft model
+        clauses are approved.
+      </p>
+      <p>
+        Depending on the circumstance, Corridor also collects and transfers to
+        the U.S. personal data with consent; to perform a contract with you; or
+        to fulfill a compelling legitimate interest of Corridor in a manner that
+        does not outweigh your rights and freedoms. Corridor endeavors to apply
+        suitable safeguards to protect the privacy and security of your personal
+        data and to use it only consistent with your relationship with Corridor
+        and the practices described in this Privacy Statement. Corridor also
+        enters into data processing agreements and model clauses with its
+        vendors whenever feasible and appropriate. Since it was founded,
+        Corridor has received zero government requests for information.
+      </p>
+      <p>
+        For more information or if you have any questions, please contact us at
+        contact@corridor.dev.
+      </p>
+
+      <h2 id="data-subject-rights">Data Subject rights</h2>
+      <p>
+        The European Union's General Data Protection Regulation (GDPR) and other
+        countries' privacy laws provide certain rights for data subjects. Data
+        Subject rights under GDPR include the following:
+      </p>
+      <ul>
+        <li>Right to be informed</li>
+        <li>Right of access</li>
+        <li>Right to rectification</li>
+        <li>Right to erasure</li>
+        <li>Right to restrict processing</li>
+        <li>Right of data portability</li>
+        <li>Right to object</li>
+        <li>Rights related to automated decision making including profiling</li>
+      </ul>
+      <p>
+        This Privacy Notice is intended to provide you with information about
+        what personal data Corridor collects about you and how it is used.
+      </p>
+      <p>
+        If you wish to confirm that Corridor is processing your personal data,
+        or to have access to the personal data Corridor may have about you,
+        please contact us.
+      </p>
+      <p>
+        You may also request information about: the purpose of the processing;
+        the categories of personal data concerned; who else outside Corridor
+        might have received the data from Corridor; what the source of the
+        information was (if you didn't provide it directly to Corridor); and how
+        long it will be stored. You have a right to correct (rectify) the record
+        of your personal data maintained by Corridor if it is inaccurate. You
+        may request that Corridor erase that data or cease processing it,
+        subject to certain exceptions. You may also request that Corridor cease
+        using your data for direct marketing purposes. In many countries, you
+        have a right to lodge a complaint with the appropriate data protection
+        authority if you have concerns about how Corridor processes your
+        personal data. When technically feasible, Corridor will—at your
+        request—provide your personal data to you.
+      </p>
+      <p>
+        Reasonable access to your personal data will be provided at no cost. If
+        access cannot be provided within a reasonable time frame, Corridor will
+        provide you with a date when the information will be provided. If for
+        some reason access is denied, Corridor will provide an explanation as to
+        why access has been denied.
+      </p>
+      <p>
+        For questions or complaints concerning the processing of your personal
+        data, you can email us at contact@corridor.dev. Alternatively, if you
+        are located in the European Union, you can also have recourse to the
+        European Data Protection Supervisor or with your nation's data
+        protection authority.
+      </p>
+
+      <h2 id="data-storage">Data storage and retention</h2>
+      <p>
+        Your personal data is stored by the Corridor on its servers, and on the
+        servers of the cloud-based database management services the Corridor
+        engages, located in the United States. The Corridor retains service data
+        for the duration of the customer's business relationship with the
+        Corridor and for a period of time thereafter, to analyze the data for
+        Corridor's own operations, and for historical and archiving purposes
+        associated with Corridor's services. Corridor retains prospect data
+        until such time as it no longer has business value and is purged from
+        Corridor systems. All personal data that Corridor controls may be
+        deleted upon verified request from Data Subjects or their authorized
+        agents. For more information on where and how long your personal data is
+        stored, and for more information on your rights of erasure and
+        portability, please contact us at: contact@corridor.dev.
+      </p>
+
+      <h2 id="childrens-data">Children's data</h2>
+      <p>
+        We do not knowingly attempt to solicit or receive information from
+        children.
+      </p>
+
+      <h2 id="questions">Questions, concerns or complaints</h2>
+      <p>
+        If you have questions, concerns, complaints, or would like to exercise
+        your rights, please contact us at:
+      </p>
+      <p>
+        Corridor<br />
+        contact@corridor.dev
+      </p>
+
+      <div class="footer">
+        <div class="footer-links">
+          <a href="../">Home</a>
+          <a href="../privacy/">Privacy Policy</a>
+          <a href="../terms/">Terms of Service</a>
+        </div>
+        <p>&copy; 2025 Corridor Security, Inc.</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        const html = document.documentElement;
+        const button = document.querySelector(".theme-toggle");
+
+        if (html.getAttribute("data-theme") === "dark") {
+          html.setAttribute("data-theme", "light");
+          button.textContent = "☾";
+        } else {
+          html.setAttribute("data-theme", "dark");
+          button.textContent = "☼";
+        }
+      }
+    </script>
+  </body>
+</html>
