@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Policy - Corridor</title>
+    <link rel="icon" type="image/png" href="../favicon.ico" />
+    <style>
+      /* Add theme variables */
+      :root[data-theme="dark"] {
+        --bg-gradient: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+        --text-color: #ffffff;
+        --text-secondary: #cccccc;
+        --feature-bg: rgba(255, 255, 255, 0.05);
+        --coming-soon-bg: rgba(255, 255, 255, 0.1);
+      }
+
+      :root[data-theme="light"] {
+        --bg-gradient: linear-gradient(135deg, #f5f5f5, #ffffff);
+        --text-color: #1a1a1a;
+        --text-secondary: #444444; /* Even darker grey */
+        --feature-bg: rgba(0, 0, 0, 0.05);
+        --coming-soon-bg: rgba(0, 0, 0, 0.1);
+      }
+
+      /* Update existing styles to use variables */
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-gradient);
+        color: var(--text-color);
+      }
+      .container {
+        max-width: 800px;
+        padding: 2rem;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+      h3 {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: var(--text-color);
+      }
+      p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+      }
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      a {
+        color: var(--text-secondary);
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .theme-toggle {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        border: 1.5px solid var(--text-secondary);
+        background: transparent;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1.2rem;
+      }
+      .theme-toggle:hover {
+        background: var(--feature-bg);
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      .footer {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        text-align: center;
+        border-top: 1px solid var(--text-secondary);
+        color: var(--text-secondary);
+      }
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+      }
+      .term-section {
+        margin-bottom: 2rem;
+      }
+      blockquote {
+        border-left: 3px solid var(--text-secondary);
+        margin-left: 0;
+        padding-left: 1rem;
+        color: var(--text-secondary);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-toggle" onclick="toggleTheme()">☾</button>
+
+    <div class="container">
+      <div class="header">
+        <div class="logo-container">
+          <a href="../"
+            ><img
+              src="../logo-square.png"
+              alt="Corridor Logo"
+              style="width: 50px"
+          /></a>
+          <h1 style="margin: 0">Corridor</h1>
+        </div>
+      </div>
+
+      <h1>Vulnerability Disclosure Policy</h1>
+      <p><em>Last updated March 31, 2025</em></p>
+
+      <div class="term-section">
+        <h2>Introduction</h2>
+        <p>
+          Corridor Security Inc. welcomes feedback from security researchers and the
+          general public to help improve our security. If you believe you have
+          discovered a vulnerability, privacy issue, exposed data, or other security
+          issues in any of our assets, we want to hear from you. This policy outlines
+          steps for reporting vulnerabilities to us, what we expect, what you can expect
+          from us.
+        </p>
+      </div>
+
+      <div class="term-section">
+        <h2>Systems in Scope</h2>
+        <p>
+          This policy applies to any digital assets owned, operated, or maintained by
+          Corridor Security Inc.
+        </p>
+      </div>
+
+      <div class="term-section">
+        <h2>Out of Scope</h2>
+        <ul>
+          <li>
+            Assets or other equipment not owned by parties participating in this policy.
+          </li>
+        </ul>
+        <p>
+          Vulnerabilities discovered or suspected in out-of-scope systems should be
+          reported to the appropriate vendor or applicable authority.
+        </p>
+      </div>
+
+      <div class="term-section">
+        <h2>Our Commitments</h2>
+        <p>When working with us, according to this policy, you can expect us to:</p>
+        <ul>
+          <li>
+            Respond to your report promptly, and work with you to understand and
+            validate your report;
+          </li>
+          <li>
+            Strive to keep you informed about the progress of a vulnerability as it is
+            processed;
+          </li>
+          <li>
+            Work to remediate discovered vulnerabilities in a timely manner, within our
+            operational constraints; and
+          </li>
+          <li>
+            Extend Safe Harbor for your vulnerability research that is related to this
+            policy.
+          </li>
+        </ul>
+      </div>
+
+      <div class="term-section">
+        <h2>Our Expectations</h2>
+        <p>
+          In participating in our vulnerability disclosure program in good faith, we ask
+          that you:
+        </p>
+        <ul>
+          <li>
+            Play by the rules, including following this policy and any other relevant
+            agreements. If there is any inconsistency between this policy and any other
+            applicable terms, the terms of this policy will prevail;
+          </li>
+          <li>Report any vulnerability you've discovered promptly;</li>
+          <li>
+            Avoid violating the privacy of others, disrupting our systems, destroying
+            data, and/or harming user experience;
+          </li>
+          <li>
+            Use only the Official Channels to discuss vulnerability information with us;
+          </li>
+          <li>
+            Provide us a reasonable amount of time (at least 90 days from the initial
+            report) to resolve the issue before you disclose it publicly;
+          </li>
+          <li>
+            Perform testing only on in-scope systems, and respect systems and activities
+            which are out-of-scope;
+          </li>
+          <li>
+            If a vulnerability provides unintended access to data: Limit the amount of
+            data you access to the minimum required for effectively demonstrating a
+            Proof of Concept; and cease testing and submit a report immediately if you
+            encounter any user data during testing, such as Personally Identifiable
+            Information (PII), Personal Healthcare Information (PHI), credit card data,
+            or proprietary information;
+          </li>
+          <li>
+            You should only interact with test accounts you own or with explicit
+            permission from the account holder; and
+          </li>
+          <li>Do not engage in extortion.</li>
+        </ul>
+      </div>
+
+      <div class="term-section">
+        <h2>Official Channels</h2>
+        <p>
+          Please report security issues via <a href="mailto:contact@corridor.dev">contact@corridor.dev</a>, providing all
+          relevant information. The more details you provide, the easier it will be for
+          us to triage and fix the issue.
+        </p>
+      </div>
+
+      <div class="term-section">
+        <h2>Safe Harbor</h2>
+        <p>
+          When conducting vulnerability research, according to this policy, we consider
+          this research conducted under this policy to be:
+        </p>
+        <ul>
+          <li>
+            Authorized concerning any applicable anti-hacking laws, and we will not
+            initiate or support legal action against you for accidental, good-faith
+            violations of this policy;
+          </li>
+          <li>
+            Authorized concerning any relevant anti-circumvention laws, and we will not
+            bring a claim against you for circumvention of technology controls;
+          </li>
+          <li>
+            Exempt from restrictions in our Terms of Service (TOS) and/or Acceptable
+            Usage Policy (AUP) that would interfere with conducting security research,
+            and we waive those restrictions on a limited basis; and
+          </li>
+          <li>
+            Lawful, helpful to the overall security of the Internet, and conducted in
+            good faith.
+          </li>
+        </ul>
+        <p>
+          You are expected, as always, to comply with all applicable laws. If legal
+          action is initiated by a third party against you and you have complied with
+          this policy, we will take steps to make it known that your actions were
+          conducted in compliance with this policy.
+        </p>
+        <p>
+          If at any time you have concerns or are uncertain whether your security
+          research is consistent with this policy, please submit a report through one of
+          our Official Channels before going any further.
+        </p>
+        <blockquote>
+          <p>
+            Note that the Safe Harbor applies only to legal claims under the control of
+            the organization participating in this policy, and that the policy does not
+            bind independent third parties.
+          </p>
+        </blockquote>
+      </div>
+
+      <div class="footer">
+        <div class="footer-links">
+          <a href="../">Home</a>
+          <a href="../privacy/">Privacy Policy</a>
+          <a href="../terms/">Terms of Service</a>
+          <a href="../security/">Security</a>
+        </div>
+        <p>&copy; 2025 Corridor Security Inc.</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        const html = document.documentElement;
+        const button = document.querySelector(".theme-toggle");
+
+        if (html.getAttribute("data-theme") === "dark") {
+          html.setAttribute("data-theme", "light");
+          button.textContent = "☾";
+        } else {
+          html.setAttribute("data-theme", "dark");
+          button.textContent = "☼";
+        }
+      }
+    </script>
+  </body>
+</html>
